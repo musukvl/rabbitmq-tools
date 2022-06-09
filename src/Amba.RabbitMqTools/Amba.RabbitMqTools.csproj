@@ -9,10 +9,11 @@
         <Description>Set of tools to validatate connection to RabbitMQ</Description>
         <Copyright>Alexey Ryazhskikh</Copyright>
         <PackageProjectUrl>https://github.com/musukvl/rabbitmq-tools</PackageProjectUrl>
-        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression> 
         <RepositoryUrl>https://github.com/musukvl/rabbitmq-tools.git</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
         <PackageTags>rabbitmq masstransit amqp amqps dotnettool</PackageTags>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,6 +22,10 @@
       <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.1" />
       <PackageReference Include="McMaster.Extensions.Hosting.CommandLine" Version="4.0.1" />
       <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="README.md" Pack="true" PackagePath="\" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 #build dotnet tool
-$version = "1.0.0"
+$version = "1.0.4"
 $appName = "Amba.RabbitMqTools"
-$toolName = "amba-rabbitmq"
+$toolName = "amba-rabbitmq-tools"
 $csprojPath = "$appName/$appName.csproj"
 
 #build nuget package
@@ -14,7 +14,7 @@ dotnet pack $csprojPath --configuration Release --output ../publish/tool `
 dotnet publish $csprojPath `
     --configuration Release `
     -r win10-x64 `
-    --output ./publish/exe  `
+    --output ../publish/exe  `
     --self-contained true `
     -p:Version=$version  `
     -p:PublishSingleFile=true `
