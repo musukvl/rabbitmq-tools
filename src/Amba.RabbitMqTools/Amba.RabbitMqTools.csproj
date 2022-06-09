@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Amba.RabbitMqTools</Title>
+        <Description>Set of tools to validatate connection to RabbitMQ</Description>
+        <Copyright>Alexey Ryazhskikh</Copyright>
+        <PackageProjectUrl>https://github.com/musukvl/rabbitmq-tools</PackageProjectUrl>
+        <PackageLicenseUrl>https://licenses.nuget.org/MIT</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/musukvl/rabbitmq-tools.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>rabbitmq masstransit amqp amqps dotnettool</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit" Version="8.0.3" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.3" />
+      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.1" />
+      <PackageReference Include="McMaster.Extensions.Hosting.CommandLine" Version="4.0.1" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    </ItemGroup>
+
+</Project>
